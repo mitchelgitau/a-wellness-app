@@ -21,6 +21,7 @@ const useStyles = createStyles((theme) => ({
     backgroundColor: theme.colors.gray[5],
     backgroundSize: "cover",
     backgroundPosition: "center",
+    
   },
   inner: {
     display: "flex",
@@ -30,6 +31,7 @@ const useStyles = createStyles((theme) => ({
     paddingTop: theme.spacing.sm,
     paddingBottom: theme.spacing.sm,
     backgroundColor: theme.colors.gray[3],
+    
   },
   links: {
     [theme.fn.smallerThan("xs")]: {
@@ -125,7 +127,7 @@ export function Hero() {
   return (
     <div className={classes.hero}>
       <Overlay
-        opacity={0.5}
+        opacity={1.5}
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 30%, rgba(0, 0, 0, .25) 30%)"
         zIndex={0}
       />
@@ -138,7 +140,7 @@ export function Hero() {
             className={classes.hiddenMobile}
           >
             <a className={classes.links}>HOME</a>
-            <a className={classes.links}>ABOUT</a>
+            <a className={classes.links} >ABOUT US</a>
             <a className={classes.links}>FIND CALM</a>
             <a className={classes.links}>CONTACT US</a>
             <a className={classes.links}>BLOG</a>
